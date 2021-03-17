@@ -1,0 +1,154 @@
+{
+  "main": {
+    "name":"Mehmet Emin KONUK",
+    "description":"Merhaba ! Ben Mehmet Emin KONUK. Kişisel web siteme hoşgeldin. Aşağıda bazı sosyal medya hesaplarımı bulabilirsin. ",
+    "image":"a.jpg",
+    "bio":"Ben Mehmet Emin KONUK. 21 yaşındayım. Yozgat'ta yaşıyorum. Ondokuz Mayıs Üniversitesinde Bilgisayar Mühendisliği 3.Sınıf öğrencisiyim.Hakkımda daha fazla bilgiyi ,iletişim bilgilerimi ve CV'mi aşağıda bulabilirsiniz.",
+    "contactmessage":"Aşağıdaki kutuları doldurarak ya da iletişim bilgilerim üzerinden bana ulaşabilirsiniz.",
+    "email": "mkonuk66@hotmail.com",
+    "email2": "mkonuk6666@gmail.com",
+    "phone": "532 551 47 48",
+    "logo" : "konuk.svg",
+    "hg" : "hg.jpg",
+    "linkedin": "https://www.linkedin.com/in/mkonuk66",
+    "github":"https://github.com/mkonuk66",
+    "instagram" : "https://instagram.com/mkonuk66",
+    "twitter" : "https://twitter.com/mkonuk66",
+    "address":{
+      "city" : "Yozgat",
+      "country" : "Türkiye"
+    },
+    "resumedownload":"#CV",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://facebook.com/mkonuk66",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"twitter",
+        "url":"http://twitter.com/mkonuk66",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/mkonuk66/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/mkonuk66",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/mkonuk66",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"",
+    "education":[
+      {
+        "school":"Yozgat Şehit Fuat Bahadır Buharalıoğlu Anadolu Lisesi",
+        "degree":"Anadolu Lisesi",
+        "graduated":"2014 - 2018",
+        "description":""
+      },
+      {
+        "school":"Ondokuz Mayıs Üniversitesi - Bilgisayar Mühendisliği",
+        "degree":"Lisans",
+        "graduated":"2018 - Devam ediyor",
+        "description":""
+      }
+    ],
+    "education2":[
+      {
+        "school":"React İle Web Programcılığı",
+        "degree":"BTK AKADEMİ",
+        "graduated":"2021",
+        "description":"https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=dwpRng48"
+      },
+      {
+        "school":"JAVA İle Programlamaya Giriş",
+        "degree":"BTK AKADEMİ",
+        "graduated":"2021",
+        "description":"https://www.btkakademi.gov.tr/portal/certificate/validate?certificateId=bmlxy1na"
+      },
+      {
+        "school":"Javascript",
+        "degree":"TURKCELL GELECEĞİ YAZANLAR",
+        "graduated":"2021",
+        "description":"https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/mkonuk/Web%20Programlama/301"
+      },
+      {
+        "school":"Python 101",
+        "degree":"TURKCELL GELECEĞİ YAZANLAR",
+        "graduated":"2021",
+        "description":"https://gelecegiyazanlar.turkcell.com.tr/kisi/belge/mkonuk/Python/101"
+      }
+    ],
+    "work":[
+      {
+        "company":"Henüz okulum devam ediyor.",
+        "title":"Öğrenci ",
+        "years":"2021",
+        "description":""
+      }
+    ],
+    "skills":[
+      {
+        "name":"C",
+        "level":"50%"
+      },
+      {
+        "name":"JAVA",
+        "level":"60%"
+      },
+      {
+        "name" : "Ruby",
+        "level" : "40%"
+      },
+      {
+        "name":"C#",
+        "level":"30%"
+      },
+      {
+        "name":"HTML",
+        "level":"90%"
+      },
+      {
+        "name":"CSS",
+        "level":"90%"
+      },
+      {
+        "name":"Javascript",
+        "level":"70%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"60%"
+      }
+      
+     
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Kişisel Web Sitem",
+        "category":"kişisel web sitesi",
+        "image":"mkonukcom.jpg",
+        "url":"http://www.mkonuk.com/"
+      },
+      {
+        "title":"Blog",
+        "category":"Henüz geliştirme aşamasında",
+        "image":"comingsoon.jpg",
+        "url":"#"
+      }
+      
+    ]
+  }
+}
