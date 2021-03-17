@@ -1,4 +1,11 @@
-##mkonuk.com 
-#Personal Web Site
-Template : https://github.com/nordicgiant2/react-nice-resume
-thank you https://github.com/nordicgiant2.
+# [mkonuk.com](http://www.mkonuk.com)
+---------------
+
+### My Personal Web Site
+---------------------------
+#### Edited [nordicgiant2](https://github.com/nordicgiant2) template
+
+AUTHOR
+-------------------------
+thank you...
+[nordicgiant2](https://github.com/nordicgiant2)
