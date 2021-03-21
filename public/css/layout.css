@@ -8,12 +8,12 @@
    TOC:
    a. General Styles
    b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
+   c. benkimim Section
+   d. hakkimda Section
+   e. proje Section
    f. Call To Action Section
    g. Testimonials Section
-   h. Contact Section
+   h. iletisim Section
    i. Footer
 
 ===================================================================== */
@@ -175,99 +175,99 @@ ul#nav li.current a { color: #5A2020; }
 
 
 /* ------------------------------------------------------------------ */
-/* c. About Section
+/* c. benkimim Section
 /* ------------------------------------------------------------------ */
 
-#about {
+#benkimim {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
 }
 
-#about a, #about a:visited  { color:#FFFFFF; }
-#about a:hover { color: #5A2020; }
-#about h2 {
+#benkimim a, #benkimim a:visited  { color:#FFFFFF; }
+#benkimim a:hover { color: #5A2020; }
+#benkimim h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #5A2020;
    margin-bottom: 12px;
 }
-#about p {
+#benkimim p {
    line-height: 30px;
    color: #999999;
 }
-#about .profile-pic {
+#benkimim .profile-pic {
    position: relative;
    width: 120px;
    height: 120px;
    border-radius: 100%;
 }
-#about .contact-details { width: 41.66667%; }
-#about .download {
+#benkimim .contact-details { width: 41.66667%; }
+#benkimim .download {
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
-#about .download .button {
+#benkimim .main-col { padding-right: 5%; }
+#benkimim .download .button {
    margin-top: 6px;
    background: #5A2020;
 }
-#about .download .button:hover {
+#benkimim .download .button:hover {
    background: #5A2020;
    color: #000000;
 }
-#about .download .button i {
+#benkimim .download .button i {
    margin-right: 15px;
    font-size: 20px;
 }
 
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. hakkimda Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#hakkimda {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #5A2020; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#hakkimda a, #hakkimda a:visited  { color: #5A2020; }
+#hakkimda a:hover, #hakkimda a:focus { color: #313131; }
 
-#resume h1 {
+#hakkimda h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#hakkimda h1 span {
    border-bottom: 3px solid #5A2020;
    padding-bottom: 6px;
 }
-#resume h3 {
+#hakkimda h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#hakkimda .header-col { padding-top: 9px; }
+#hakkimda .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#hakkimda .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#hakkimda .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#hakkimda .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
@@ -404,15 +404,15 @@ ul#nav li.current a { color: #5A2020; }
 }  */
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* e. proje Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#proje {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
 }
-#portfolio h1 {
+#proje h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -421,8 +421,8 @@ ul#nav li.current a { color: #5A2020; }
    color: #5A2020;
 }
 
-/* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
+/* proje Content */
+#proje-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
@@ -781,29 +781,29 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------ */
-/* h. Contact Section
+/* h. iletisim Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+#iletisim {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #5A2020;
 }
-#contact .section-head { margin-bottom: 42px; }
+#iletisim .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #5A2020; }
-#contact a:hover, #contact a:focus { color: #fff; }
+#iletisim a, #iletisim a:visited  { color: #5A2020; }
+#iletisim a:hover, #iletisim a:focus { color: #fff; }
 
-#contact h1 {
+#iletisim h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #5A2020;
    margin-bottom: 6px;
 }
-#contact h1 span { display: none; }
-#contact h1:before {
+#iletisim h1 span { display: none; }
+#iletisim h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
 	padding-right: 10px;
@@ -814,22 +814,22 @@ call-to-action .button {
    color: #5A2020;
 }
 
-#contact h4 {
+#iletisim h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #FFFFFF;
    margin-bottom: 6px;
 }
-#contact p.lead {
+#iletisim p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
    color: #FFFFFF
 }
-#contact .header-col { padding-top: 6px; }
+#iletisim .header-col { padding-top: 6px; }
 
 
-/* contact form */
-#contact form { margin-bottom: 30px; }
-#contact label {
+/* iletisim form */
+#iletisim form { margin-bottom: 30px; }
+#iletisim label {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
    color: #EBEEEE;
@@ -837,9 +837,9 @@ call-to-action .button {
 	float: left;
    width: 26%;
 }
-#contact input,
-#contact textarea,
-#contact select {
+#iletisim input,
+#iletisim textarea,
+#iletisim select {
    padding: 10px 20px;
 	color: #eee;
 	background: #373233;
@@ -850,13 +850,13 @@ call-to-action .button {
    line-height: 24px;
    width: 65%;
 }
-#contact input:focus,
-#contact textarea:focus,
-#contact select:focus {
+#iletisim input:focus,
+#iletisim textarea:focus,
+#iletisim select:focus {
 	color: #fff;
 	background-color: #5A2020;
 }
-#contact button.submit {
+#iletisim button.submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#5A2020;
@@ -868,11 +868,11 @@ call-to-action .button {
 	border-radius: 0px;
    margin-left: 26%;
 }
-#contact button.submit:hover {
+#iletisim button.submit:hover {
 	color: #5A2020;
 	background: #fff;
 }
-#contact span.required {
+#iletisim span.required {
 	color: #5A2020;
 	font-size: 13px;
 }

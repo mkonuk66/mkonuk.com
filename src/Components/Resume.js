@@ -33,7 +33,7 @@ class Resume extends Component {
               {education2.degree} <span>&bull;</span>
               <em className="date">{education2.graduated}</em>
             </p>
-            <a href={education2.description}>LİNK</a>
+            <a href={education2.description} target="_blank">LİNK</a>
           </div>
         );
       });
@@ -68,7 +68,8 @@ class Resume extends Component {
     }
 
     return (
-      <section id="resume">
+      <section id="hakkimda">
+        
         <div className="row education">
           <div className="three columns header-col">
             <h1>

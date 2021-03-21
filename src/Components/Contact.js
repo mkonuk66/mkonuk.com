@@ -12,12 +12,11 @@ class Contact extends Component {
       var instagram = this.props.data.instagram;
       var twitter = this.props.data.twitter;
       var country = this.props.data.address.country;
-      var phone = this.props.data.phone;
       var message = this.props.data.contactmessage;
     }
 
     return (
-      <section id="contact">
+      <section id="iletisim">
         <div className="row section-head">
           <div className="two columns header-col">
             <h1>
@@ -106,29 +105,48 @@ class Contact extends Component {
             <div className="widget widget_contact">
               <h4>İletişim Bilgileri</h4>
               <p className="address">
-                {name}
+                {name} , 21
                 <br />
                 {city}, {country}
                 <br />
-                <a href="tel:05325514748">{phone}</a>
                 <br />
-                <a href="mailto:mkonuk66@hotmail.com">{email}</a>
+                <a href="mailto:mkonuk66@hotmail.com" target="_blank">
+                  {email}
+                </a>
                 <br />
-                <a href="mailto:mkonuk6666@gmail.com">{email2}</a>
+                <a href="mailto:mkonuk6666@gmail.com" target="_blank">
+                  {email2}
+                </a>
               </p>
             </div>
             <div>
               <ul className="social">
-              <a href={twitter} className="button btn twitter-btn">
+                <a
+                  href={twitter}
+                  target="_blank"
+                  className="button btn twitter-btn"
+                >
                   <i className="fa fa-twitter"></i>Twitter
                 </a>
-                <a href={instagram} className="button btn instagram-btn">
+                <a
+                  href={instagram}
+                  target="_blank"
+                  className="button btn instagram-btn"
+                >
                   <i className="fa fa-instagram"></i>İnstagram
                 </a>
-                <a href={linkedin} className="button btn linkedin-btn">
+                <a
+                  href={linkedin}
+                  target="_blank"
+                  className="button btn linkedin-btn"
+                >
                   <i className="fa fa-linkedin"></i>LinkedIn
                 </a>
-                <a href={github} className="button btn github-btn">
+                <a
+                  href={github}
+                  target="_blank"
+                  className="button btn github-btn"
+                >
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>

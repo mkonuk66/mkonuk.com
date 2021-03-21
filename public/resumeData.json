@@ -9,7 +9,6 @@
     "email2": "mkonuk6666@gmail.com",
     "phone": "532 551 47 48",
     "logo" : "konuk.svg",
-    "hg" : "hg.jpg",
     "linkedin": "https://www.linkedin.com/in/mkonuk66",
     "github":"https://github.com/mkonuk66",
     "instagram" : "https://instagram.com/mkonuk66",
@@ -18,7 +17,7 @@
       "city" : "Yozgat",
       "country" : "Türkiye"
     },
-    "resumedownload":"#CV",
+    "cv":"CV.jpg",
     "social":[
       {
         "name":"facebook",
