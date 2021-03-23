@@ -109,12 +109,12 @@ class Contact extends Component {
                 <br />
                 {city}, {country}
                 <br />
-                <br />
-                <a href="mailto:mkonuk66@hotmail.com" target="_blank">
+                
+                <a href="mailto:mkonuk66@hotmail.com" target="_blank" rel="noopener noreferrer">
                   {email}
                 </a>
                 <br />
-                <a href="mailto:mkonuk6666@gmail.com" target="_blank">
+                <a href="mailto:mkonuk6666@gmail.com" target="_blank" rel="noopener noreferrer">
                   {email2}
                 </a>
               </p>
@@ -145,6 +145,7 @@ class Contact extends Component {
                 <a
                   href={github}
                   target="_blank"
+                  
                   className="button btn github-btn"
                 >
                   <i className="fa fa-github"></i>Github
