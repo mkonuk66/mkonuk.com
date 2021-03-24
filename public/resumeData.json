@@ -2,7 +2,7 @@
   "main": {
     "name":"Mehmet Emin KONUK",
     "description":"Merhaba ! Ben Mehmet Emin KONUK. Kişisel web siteme hoşgeldin. Aşağıda bazı sosyal medya hesaplarımı bulabilirsin. ",
-    "image":"a.jpg",
+    "image":"a.webp",
     "bio":"Ben Mehmet Emin KONUK. 21 yaşındayım. Yozgat'ta yaşıyorum. Ondokuz Mayıs Üniversitesinde Bilgisayar Mühendisliği 3.Sınıf öğrencisiyim.Hakkımda daha fazla bilgiyi ,iletişim bilgilerimi ve CV'mi aşağıda bulabilirsiniz.",
     "contactmessage":"Aşağıdaki kutuları doldurarak ya da iletişim bilgilerim üzerinden bana ulaşabilirsiniz.",
     "email": "mkonuk66@hotmail.com",
@@ -138,13 +138,13 @@
       {
         "title":"Kişisel Web Sitem",
         "category":"kişisel web sitesi",
-        "image":"mkonukcom.jpg",
+        "image":"mkonukcom.webp",
         "url":"http://www.mkonuk.com/"
       },
       {
         "title":"Blog",
         "category":"Henüz geliştirme aşamasında",
-        "image":"comingsoon.jpg",
+        "image":"comingsoon.webp",
         "url":"#"
       }
       
