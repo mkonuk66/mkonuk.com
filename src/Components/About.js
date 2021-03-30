@@ -9,6 +9,7 @@ class About extends Component {
       var city = this.props.data.address.city;
       var email = this.props.data.email;
       var email2 = this.props.data.email2;
+      var email3 = this.props.data.email3;
       var country = this.props.data.address.country;
       var cv = "images/" + this.props.data.cv
     }
@@ -21,6 +22,7 @@ class About extends Component {
               className="profile-pic"
               src={profilepic}
               alt="Profil Fotoğrafı"
+              loading="lazy"
             />
           </div>
           <div className="nine columns main-col">
@@ -37,9 +39,11 @@ class About extends Component {
                     {city} / {country}
                   </span>
                   <br />
-                  <a href="mailto:mkonuk66@hotmail.com">{email}</a>
+                  <a href="mailto:info@mkonuk.com" target="_blank">{email3}</a>
                   <br />
-                  <a href="mailto:mkonuk6666@gmail.com">{email2}</a>
+                  <a href="mailto:mkonuk6666@gmail.com" target="_blank">{email2}</a>
+                  <br />
+                  <a href="mailto:mkonuk66@hotmail.com" target="_blank">{email}</a>
                 </p>
               </div>
               <div className="columns download">

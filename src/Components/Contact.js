@@ -6,6 +6,7 @@ class Contact extends Component {
       var name = this.props.data.name;
       var email = this.props.data.email;
       var email2 = this.props.data.email2;
+      var email3 = this.props.data.email3;
       var city = this.props.data.address.city;
       var linkedin = this.props.data.linkedin;
       var github = this.props.data.github;
@@ -109,7 +110,10 @@ class Contact extends Component {
                 <br />
                 {city}, {country}
                 <br />
-                
+                <a href="mailto:info@mkonuk.com" target="_blank" rel="noopener noreferrer">
+                  {email3}
+                </a>
+                <br />
                 <a href="mailto:mkonuk66@hotmail.com" target="_blank" rel="noopener noreferrer">
                   {email}
                 </a>
