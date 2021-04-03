@@ -23,6 +23,8 @@ class About extends Component {
               src={profilepic}
               alt="Profil Fotoğrafı"
               loading="lazy"
+              width="100%"
+              height="100%"
             />
           </div>
           <div className="nine columns main-col">
