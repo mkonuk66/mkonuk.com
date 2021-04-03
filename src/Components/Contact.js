@@ -110,15 +110,15 @@ class Contact extends Component {
                 <br />
                 {city}, {country}
                 <br />
-                <a href="mailto:info@mkonuk.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:info@mkonuk.com" target="_blank" rel="noopener noreferrer nofollow">
                   {email3}
                 </a>
                 <br />
-                <a href="mailto:mkonuk66@hotmail.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:mkonuk66@hotmail.com" target="_blank" rel="noopener noreferrer nofollow">
                   {email}
                 </a>
                 <br />
-                <a href="mailto:mkonuk6666@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:mkonuk6666@gmail.com" target="_blank" rel="noopener noreferrer nofollow">
                   {email2}
                 </a>
               </p>
@@ -129,6 +129,7 @@ class Contact extends Component {
                   href={twitter}
                   target="_blank"
                   className="button btn twitter-btn"
+                  rel="nofollow"
                 >
                   <i className="fa fa-twitter"></i>Twitter
                 </a>
@@ -136,6 +137,7 @@ class Contact extends Component {
                   href={instagram}
                   target="_blank"
                   className="button btn instagram-btn"
+                  rel="nofollow"
                 >
                   <i className="fa fa-instagram"></i>İnstagram
                 </a>
@@ -143,13 +145,14 @@ class Contact extends Component {
                   href={linkedin}
                   target="_blank"
                   className="button btn linkedin-btn"
+                  rel="nofollow"
                 >
                   <i className="fa fa-linkedin"></i>LinkedIn
                 </a>
                 <a
                   href={github}
                   target="_blank"
-                  
+                  rel="nofollow"
                   className="button btn github-btn"
                 >
                   <i className="fa fa-github"></i>Github

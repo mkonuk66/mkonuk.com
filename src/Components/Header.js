@@ -60,6 +60,7 @@ class Header extends Component {
                 href={linkedin}
                 target="_blank"
                 className="button btn linkedin-btn"
+                rel="nofollow"
               >
                 <i className="fa fa-linkedin"></i>LinkedIn
               </a>
@@ -67,6 +68,7 @@ class Header extends Component {
                 href={twitter}
                 target="_blank"
                 className="button btn twitter-btn"
+                rel="nofollow"
               >
                 <i className="fa fa-twitter"></i>Twitter
               </a>
