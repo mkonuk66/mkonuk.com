@@ -1,11 +1,21 @@
 # [mkonuk.com](http://www.mkonuk.com)
 ---------------
 
-### My Personal Web Site
+## My Personal Web Site
 ---------------------------
-#### Edited [nordicgiant2](https://github.com/nordicgiant2) template
+#### Edited [tbakerx](https://github.com/tbakerx/react-resume-template) template
 
-AUTHOR
+## Run Project
+---------------------------
+1. npm i
+2. npm start
+3. --regulations--
+4. npm run build
+
+
+
+
+## AUTHOR
 -------------------------
 thank you...
-[nordicgiant2](https://github.com/nordicgiant2)
+[tbakerx](https://github.com/tbakerx/react-resume-template)
