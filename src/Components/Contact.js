@@ -36,7 +36,6 @@ class Contact extends Component {
       var country = this.props.data.address.country;
       var message = this.props.data.contactmessage;
     }
-
     return (
       <section id="iletisim">
         <div className="row section-head">
@@ -55,19 +54,18 @@ class Contact extends Component {
           <form className="contact-form eight columns" onSubmit={sendEmail}>
             <input type="hidden" name="contact_number" />
             <label>İsim Soyisim :</label>
-            <input type="text" name="contactName" />
+            <input type="text" name="contactName" required />
             <label>E-mail :</label>
-            <input type="email" name="contactEmail" />
+            <input type="email" name="contactEmail" required />
             <label>Konu :</label>
             <input type="text" name="contactSubject" />
             <label>Mesaj :</label>
-            <textarea name="contactMessage" />
+            <textarea name="contactMessage" required />
             <input
               type="submit"
               value="Gönder"
               onClick={function () {
                 alertify.alert("Başarılı !", "Mesajınız başarıyla gönderildi.");
-                document.forms[0].reset();
               }}
             />
           </form>
