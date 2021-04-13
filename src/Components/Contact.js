@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
+import alertify from "alertifyjs";
 
 function sendEmail(e) {
   e.preventDefault();
@@ -61,7 +62,14 @@ class Contact extends Component {
             <input type="text" name="contactSubject" />
             <label>Mesaj :</label>
             <textarea name="contactMessage" />
-            <input type="submit" value="Gönder" />
+            <input
+              type="submit"
+              value="Gönder"
+              onClick={function () {
+                alertify.alert("Başarılı !", "Mesajınız başarıyla gönderildi.");
+                document.forms[0].reset();
+              }}
+            />
           </form>
           <aside className="four columns footer-widgets">
             <div className="widget widget_contact">

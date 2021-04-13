@@ -4,6 +4,7 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
+    "alertifyjs": "^1.13.1",
     "anix": "^0.3.3",
     "emailjs-com": "^2.6.4",
     "jquery": "^3.6.0",
