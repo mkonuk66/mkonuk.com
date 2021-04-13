@@ -1,5 +1,25 @@
 import React, { Component } from "react";
+import emailjs from "emailjs-com";
 
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_gdfk549",
+      "template_926sxig",
+      e.target,
+      "user_poj04YYRQKaB2u1Wdgu3v"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+}
 class Contact extends Component {
   render() {
     if (this.props.data) {
@@ -31,77 +51,18 @@ class Contact extends Component {
         </div>
 
         <div className="row">
-          <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
-              <fieldset>
-                <div>
-                  <label htmlFor="contactName">
-                    İsim Soyisim <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactName"
-                    name="contactName"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactEmail">
-                    Email <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactEmail"
-                    name="contactEmail"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactSubject">Konu</label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactSubject"
-                    name="contactSubject"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactMessage">
-                    Mesaj <span className="required">*</span>
-                  </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
-                  ></textarea>
-                </div>
-
-                <div>
-                  <button className="submit">Gönder</button>
-                  <span id="image-loader">
-                    <img alt="" src="images/loader.gif" width="5%" />
-                  </span>
-                </div>
-              </fieldset>
-            </form>
-
-            <div id="message-warning"> HATA !</div>
-            <div id="message-success">
-              <i className="fa fa-check"></i>Mesajın gönderildi , teşekkürler !
-              <br />
-            </div>
-          </div>
-
+          <form className="contact-form eight columns" onSubmit={sendEmail}>
+            <input type="hidden" name="contact_number" />
+            <label>İsim Soyisim :</label>
+            <input type="text" name="contactName" />
+            <label>E-mail :</label>
+            <input type="email" name="contactEmail" />
+            <label>Konu :</label>
+            <input type="text" name="contactSubject" />
+            <label>Mesaj :</label>
+            <textarea name="contactMessage" />
+            <input type="submit" value="Gönder" />
+          </form>
           <aside className="four columns footer-widgets">
             <div className="widget widget_contact">
               <h4>İletişim Bilgileri</h4>

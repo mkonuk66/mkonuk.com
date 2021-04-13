@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "anix": "^0.3.3",
+    "emailjs-com": "^2.6.4",
     "jquery": "^3.6.0",
     "particles-bg": "^2.5.5",
     "react": "^16.2.0",
