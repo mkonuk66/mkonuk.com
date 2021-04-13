@@ -54,18 +54,33 @@ class Contact extends Component {
           <form className="contact-form eight columns" onSubmit={sendEmail}>
             <input type="hidden" name="contact_number" />
             <label>İsim Soyisim :</label>
-            <input type="text" name="contactName" required />
+            <input type="text" name="contactName" required id="namem" />
             <label>E-mail :</label>
             <input type="email" name="contactEmail" required />
             <label>Konu :</label>
             <input type="text" name="contactSubject" />
             <label>Mesaj :</label>
             <textarea name="contactMessage" required />
+            <label>
+              *Tüm bilgilerin doldurulması zorunludur. Aksi takdirde mesajınız
+              ulaşmayacaktır.
+            </label>
             <input
               type="submit"
               value="Gönder"
               onClick={function () {
-                alertify.alert("Başarılı !", "Mesajınız başarıyla gönderildi.");
+                if (document.getElementById("namem").innerHTML == null) {
+                  alertify.alert(
+                    "Hata !",
+                    "Lütfen istenilen bilgileri doldurunuz."
+                  );
+                  return false;
+                } else {
+                  alertify.alert(
+                    "Başarılı !",
+                    "Mesajınız başarıyla gönderildi."
+                  );
+                }
               }}
             />
           </form>
