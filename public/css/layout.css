@@ -59,13 +59,27 @@ header .banner-text h1 {
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
+   -moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
    color: #ddd;
    margin: 0 auto;
    width: 70%;
+   -moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
+header .banner-text h1:hover {color:#5a2020;}
+header .banner-text h3:hover {color:#5a2020;}
 header .banner-text h3 span,
 header .banner-text h3 a {
    color: #fff;
@@ -78,15 +92,24 @@ header .banner-text hr {
 }
 
 /* header social links */
-header .social {
-   margin: 24px 0;
+/* social links */
+header .social-links {
+   margin: 18px 0 30px 0;
    padding: 0;
    font-size: 30px;
 }
-header .social li {
-   display: inline-block;
-   margin: 0 15px;
+header .social-links a{
+   margin: 18px 0 30px 0;
    padding: 0;
+   font-size: 30px;
+   color: #fff
+}
+header .social-links a:hover{color:#5a2020;}
+header .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
 }
 
 /* scrolldown link */
@@ -183,6 +206,12 @@ ul#nav li.current a { color: #5A2020; }
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
+   -moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none
 }
 
 #benkimim a, #benkimim a:visited  { color:#FFFFFF; }
@@ -231,6 +260,12 @@ ul#nav li.current a { color: #5A2020; }
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
+   -moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none
 }
 
 #hakkimda a, #hakkimda a:visited  { color: #5A2020; }
@@ -632,10 +667,10 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------
-/* g. Testimonials
+/* g. Paylasim
 /* ------------------------------------------------------------------ */
 
-#testimonials {
+#paylasim {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
@@ -646,19 +681,28 @@ call-to-action .button {
    width: 100%;
    overflow: hidden;
 }
-#testimonials .text-container {
+#paylasim .text-container {
    padding-top: 96px;
    padding-bottom: 66px;
 }
-#testimonials h1 {
+#paylasim h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
 }
-#testimonials h1 span { display: none; }
-#testimonials .header-col { padding-top: 9px; }
-#testimonials .header-col h1:before {
+#paylasim h2 {
+   text-align: center;
+   color: #fff;
+  
+}
+#paylasim hr{
+   margin-left: 150px;
+   margin-right: 150px;
+}
+#paylasim h1 span { display: none; }
+#paylasim .header-col { padding-top: 9px; }
+#paylasim .header-col h1:before {
    font-family: 'FontAwesome';
    content: "\f10d";
 	padding-right: 10px;
@@ -670,30 +714,30 @@ call-to-action .button {
 }
 
 /*	Blockquotes */
-#testimonials blockquote {
+#paylasim blockquote {
    margin: 0 0px 30px 0px;
    padding-left: 0;
    position: relative;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
-#testimonials blockquote:before { content: none; }
-#testimonials blockquote p {
+#paylasim blockquote:before { content: none; }
+#paylasim blockquote p {
    font-family: 'librebaskerville-italic', serif;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
    color: #fff
 }
-#testimonials blockquote cite {
+#paylasim blockquote cite {
    display: block;
    font-size: 12px;
    font-style: normal;
    line-height: 18px;
    color: #fff;
 }
-#testimonials blockquote cite:before { content: "\2014 \0020"; }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited { color: #8B9798; border: none }
+#paylasim blockquote cite:before { content: "\2014 \0020"; }
+#paylasim blockquote cite a,
+#paylasim blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */
@@ -788,12 +832,13 @@ call-to-action .button {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #5A2020;
+   color: #594545;
+  
 }
 #iletisim .section-head { margin-bottom: 42px; }
 
-#iletisim a, #iletisim a:visited  { color: #5A2020; }
-#iletisim a:hover, #iletisim a:focus { color: #fff; }
+#iletisim a, #iletisim a:visited  { color: #ebeeee; }
+#iletisim a:hover, #iletisim a:focus { color: #5a2020; }
 
 #iletisim h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
@@ -816,8 +861,18 @@ call-to-action .button {
 
 #iletisim h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
-   color: #FFFFFF;
+   color: #ebeeee;
+   outline-color: #000;
    margin-bottom: 6px;
+   text-shadow: -3px 4px 1px #000;
+}
+#iletisim p{
+   -moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none
 }
 #iletisim p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
@@ -929,6 +984,13 @@ footer {
    font-size: 14px;
    text-align: center;
    position: relative;
+   -moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+   
 }
 
 footer a, footer a:visited { color: #525252; }
@@ -1007,6 +1069,7 @@ footer .social-links li:first-child { margin-left: 0; }
    margin-right: 30px;
 }
 .social .btn{
+   color: #5a2020
    padding-left: 30px;
    padding-right: 30px; 
 }

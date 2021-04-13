@@ -89,7 +89,7 @@ class Contact extends Component {
                 <div>
                   <button className="submit">Gönder</button>
                   <span id="image-loader">
-                    <img alt="" src="images/loader.gif" width="100%" height="100%" />
+                    <img alt="" src="images/loader.gif" width="5%" />
                   </span>
                 </div>
               </fieldset>
@@ -110,15 +110,27 @@ class Contact extends Component {
                 <br />
                 {city}, {country}
                 <br />
-                <a href="mailto:info@mkonuk.com" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  href="mailto:info@mkonuk.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   {email3}
                 </a>
                 <br />
-                <a href="mailto:mkonuk66@hotmail.com" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  href="mailto:mkonuk66@hotmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   {email}
                 </a>
                 <br />
-                <a href="mailto:mkonuk6666@gmail.com" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  href="mailto:mkonuk6666@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   {email2}
                 </a>
               </p>

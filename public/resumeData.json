@@ -7,6 +7,7 @@
     "contactmessage":"Aşağıdaki kutuları doldurarak ya da iletişim bilgilerim üzerinden bana ulaşabilirsiniz.",
     "email": "mkonuk66@hotmail.com",
     "email2": "mkonuk6666@gmail.com",
+    "ramazan": "ramazan.webp",
     "email3": "info@mkonuk.com",
     "phone": "532 551 47 48",
     "logo" : "logo.png",
@@ -21,27 +22,27 @@
     "cv":"CV.jpg",
     "social":[
       {
-        "name":"facebook",
+        "name":"Facebook",
         "url":"https://facebook.com/mkonuk66",
         "className":"fa fa-facebook"
       },
       {
-        "name":"twitter",
+        "name":"Twitter",
         "url":"http://twitter.com/mkonuk66",
         "className":"fa fa-twitter"
       },
       {
-        "name":"linkedin",
+        "name":"Linkedin",
         "url":"https://www.linkedin.com/in/mkonuk66/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
+        "name":"Instagram",
         "url":"http://instagram.com/mkonuk66",
         "className":"fa fa-instagram"
       },
       {
-        "name":"github",
+        "name":"Github",
         "url":"https://github.com/mkonuk66",
         "className":"fa fa-github"
       }
@@ -51,15 +52,15 @@
     "skillmessage":"",
     "education":[
       {
-        "school":"Yozgat Şehit Fuat Bahadır Buharalıoğlu Anadolu Lisesi",
-        "degree":"Anadolu Lisesi",
-        "graduated":"2014 - 2018",
-        "description":""
-      },
-      {
         "school":"Ondokuz Mayıs Üniversitesi - Bilgisayar Mühendisliği",
         "degree":"Lisans",
         "graduated":"2018 - Devam ediyor",
+        "description":""
+      },
+      {
+        "school":"Yozgat Şehit Fuat Bahadır Buharalıoğlu Anadolu Lisesi",
+        "degree":"Anadolu Lisesi",
+        "graduated":"2014 - 2018",
         "description":""
       }
     ],
@@ -150,5 +151,8 @@
       }
       
     ]
+  },
+  "testimonials":{
+    "ramazan": "ramazan.webp"
   }
 }

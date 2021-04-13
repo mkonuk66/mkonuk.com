@@ -67,13 +67,13 @@
     padding-right: 5%;
   }
 
-  /* Testimonials Section
+  /* Paylasim Bölümü
    ------------------------------------------------------------------- */
-  #testimonials .header-col h1:before {
+  #paylasim .header-col h1:before {
     font-size: 66px;
     line-height: 66px;
   }
-  #testimonials blockquote p {
+  #paylasim blockquote p {
     font-size: 22px;
     line-height: 46px;
   }
@@ -210,9 +210,9 @@
     margin: 18px auto;
   }
   header .banner img {
-   display: none;
-   width: 5%;
- }
+    display: none;
+    width: 5%;
+  }
   /* header social links */
   header .social {
     margin: 18px 0 24px 0;
@@ -233,7 +233,7 @@
   #benkimim .profile-pic {
     display: none;
   }
- 
+
   #benkimim .download .button {
     width: 100%;
     text-align: center;
@@ -295,27 +295,27 @@
     max-width: 85%;
   }
 
-  /* Testimonials Section
+  /* paylasim bölümü
    ----------------------------------------------------------------------- */
-  #testimonials .text-container {
+  #paylasim .text-container {
     text-align: center;
   }
-  #testimonials h1 {
+  #paylasim h1 {
     font: 16px/24px "opensans-bold", sans-serif;
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
   }
-  #testimonials h1 span {
+  #paylasim h1 span {
     display: block;
   }
-  #testimonials .header-col h1:before {
+  #paylasim .header-col h1:before {
     content: none;
   }
-  #testimonials blockquote {
+  #paylasim blockquote {
     padding-bottom: 24px;
   }
-  #testimonials blockquote p {
+  #paylasim blockquote p {
     font-size: 20px;
     line-height: 42px;
   }
