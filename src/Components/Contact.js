@@ -66,6 +66,7 @@ class Contact extends Component {
               name="contactName"
               placeholder="Lütfen isim soyisim giriniz"
               required
+              id="contactName"
             />
             <label>
               E-mail : <a style={{ color: "#5a2020" }}>*</a>
@@ -75,6 +76,7 @@ class Contact extends Component {
               name="contactEmail"
               placeholder="Lütfen email giriniz"
               required
+              id="contactEmail"
             />
             <label>Konu :</label>
             <input
@@ -89,9 +91,28 @@ class Contact extends Component {
               name="contactMessage"
               placeholder="Lütfen mesajınızı giriniz"
               required
+              id="contactMessage"
             />
             <label value=""></label>
-            <input type="submit" value="Gönder" />
+            <input
+              type="submit"
+              value="Gönder"
+              onClick={function () {
+                if (document.getElementById("contactName").value.length === 0) {
+                } else if (
+                  document.getElementById("contactEmail").value.length === 0
+                ) {
+                } else if (
+                  document.getElementById("contactMessage").value.length === 0
+                ) {
+                } else {
+                  alertify.alert(
+                    "Başarılı !",
+                    "Mesajınız başarıyla gönderildi."
+                  );
+                }
+              }}
+            />
           </form>
           <aside className="four columns footer-widgets">
             <div className="widget widget_contact">
