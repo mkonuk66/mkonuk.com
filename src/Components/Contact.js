@@ -52,37 +52,46 @@ class Contact extends Component {
 
         <div className="row">
           <form className="contact-form eight columns" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
-            <label>İsim Soyisim :</label>
-            <input type="text" name="contactName" required id="namem" />
-            <label>E-mail :</label>
-            <input type="email" name="contactEmail" required />
-            <label>Konu :</label>
-            <input type="text" name="contactSubject" />
-            <label>Mesaj :</label>
-            <textarea name="contactMessage" required />
+            <label></label>
+            <p>
+              Lütfen <a style={{ color: "#5a2020" }}>*</a> ile işaretlenmiş
+              bilgileri doldurunuz
+            </p>
+            <br />
             <label>
-              *Tüm bilgilerin doldurulması zorunludur. Aksi takdirde mesajınız
-              ulaşmayacaktır.
+              İsim Soyisim : <a style={{ color: "#5a2020" }}>*</a>
             </label>
             <input
-              type="submit"
-              value="Gönder"
-              onClick={function () {
-                if (document.getElementById("namem").innerHTML == null) {
-                  alertify.alert(
-                    "Hata !",
-                    "Lütfen istenilen bilgileri doldurunuz."
-                  );
-                  return false;
-                } else {
-                  alertify.alert(
-                    "Başarılı !",
-                    "Mesajınız başarıyla gönderildi."
-                  );
-                }
-              }}
+              type="text"
+              name="contactName"
+              placeholder="Lütfen isim soyisim giriniz"
+              required
             />
+            <label>
+              E-mail : <a style={{ color: "#5a2020" }}>*</a>
+            </label>
+            <input
+              type="email"
+              name="contactEmail"
+              placeholder="Lütfen email giriniz"
+              required
+            />
+            <label>Konu :</label>
+            <input
+              type="text"
+              name="contactSubject"
+              placeholder="Lütfen konuyu giriniz"
+            />
+            <label>
+              Mesaj : <a style={{ color: "#5a2020" }}>*</a>
+            </label>
+            <textarea
+              name="contactMessage"
+              placeholder="Lütfen mesajınızı giriniz"
+              required
+            />
+            <label value=""></label>
+            <input type="submit" value="Gönder" />
           </form>
           <aside className="four columns footer-widgets">
             <div className="widget widget_contact">
