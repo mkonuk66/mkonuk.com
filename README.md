@@ -1,15 +1,17 @@
 # [mkonuk.com](http://www.mkonuk.com)
+
+![This is how it looks!](https://github.com/mkonuk66/mkonuk.com/blob/master/public/images/portfolio/mkonukcom.webp)
 ---------------
 
 ## My Personal Web Site
----------------------------
-#### Edited [tbakerx](https://github.com/tbakerx/react-resume-template) template
+------------------- --------
+#### I created my own personal website by editing and developing  [tbakerx](https://github.com/tbakerx/react-resume-template)'s template.
 
-## Run Project
+## HOW TO RUN PROJECT   
 ---------------------------
 1. npm i
 2. npm start
-3. --regulations--
+3. --EDITING--
 4. npm run build
 
 
@@ -17,5 +19,4 @@
 
 ## AUTHOR
 -------------------------
-thank you...
-[tbakerx](https://github.com/tbakerx/react-resume-template)
+#### Thank you [tbakerx](https://github.com/tbakerx/react-resume-template)...
