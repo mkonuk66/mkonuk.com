@@ -125,7 +125,7 @@ class Contact extends Component {
                 <a
                   href="mailto:info@mkonuk.com"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer dofollow"
                 >
                   {email3}
                 </a>
@@ -133,7 +133,7 @@ class Contact extends Component {
                 <a
                   href="mailto:mkonuk66@hotmail.com"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer dofollow"
                 >
                   {email}
                 </a>
@@ -141,7 +141,7 @@ class Contact extends Component {
                 <a
                   href="mailto:mkonuk6666@gmail.com"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="noopener noreferrer dofollow"
                 >
                   {email2}
                 </a>
@@ -153,7 +153,7 @@ class Contact extends Component {
                   href={twitter}
                   target="_blank"
                   className="button btn twitter-btn"
-                  rel="nofollow"
+                  rel="dofollow"
                 >
                   <i className="fa fa-twitter"></i>Twitter
                 </a>
@@ -161,7 +161,7 @@ class Contact extends Component {
                   href={instagram}
                   target="_blank"
                   className="button btn instagram-btn"
-                  rel="nofollow"
+                  rel="dofollow"
                 >
                   <i className="fa fa-instagram"></i>İnstagram
                 </a>
@@ -169,14 +169,14 @@ class Contact extends Component {
                   href={linkedin}
                   target="_blank"
                   className="button btn linkedin-btn"
-                  rel="nofollow"
+                  rel="dofollow"
                 >
                   <i className="fa fa-linkedin"></i>LinkedIn
                 </a>
                 <a
                   href={github}
                   target="_blank"
-                  rel="nofollow"
+                  rel="dofollow"
                   className="button btn github-btn"
                 >
                   <i className="fa fa-github"></i>Github

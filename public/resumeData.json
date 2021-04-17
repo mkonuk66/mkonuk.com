@@ -147,13 +147,13 @@
         "title":"BAL-MAR",
         "category":"Market Otomasyonu",
         "image":"balmar.webp",
-        "url":"#"
+        "url":"javascript:"
       },
       {
         "title":"Blog",
         "category":"Henüz geliştirme aşamasında",
         "image":"comingsoon.webp",
-        "url":"#"
+        "url":"javascript:"
       }
      
       

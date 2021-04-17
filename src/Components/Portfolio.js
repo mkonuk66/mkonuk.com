@@ -1,17 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Portfolio extends Component {
   render() {
-
     if (this.props.data) {
       var projects = this.props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
-        
+        var projectImage = "images/portfolio/" + projects.image;
+
         return (
           <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <a href={projects.url} title={projects.title}>
-                <img alt={projects.title} src={projectImage} width="100%" height="100%" loading="lazy"/>
+              <a href={projects.url} title={projects.title} rel="dofollow">
+                <img
+                  alt={projects.title}
+                  src={projectImage}
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>{projects.title}</h5>
@@ -21,20 +26,20 @@ class Portfolio extends Component {
               </a>
             </div>
           </div>
-        )
-      })
+        );
+      });
     }
 
     return (
       <section id="proje">
-
         <div className="row">
-
           <div className="twelve columns collapsed">
-
             <h1>Projelerimden bazıları aşağıda</h1>
 
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div
+              id="portfolio-wrapper"
+              className="bgrid-quarters s-bgrid-thirds cf"
+            >
               {projects}
             </div>
           </div>
