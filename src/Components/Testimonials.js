@@ -13,23 +13,14 @@ class Testimonials extends Component {
             <div className="two columns header-col">
               <h1> </h1>
             </div>
-            <div classname="twelve column flex-container">
-              <img
-                src="/images/nisan23.webp"
-                alt="23 Nisan"
-                loading="lazy"
-                width="50%"
-                height="100%"
-              />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <img
-                src={ramazan}
-                alt="Ramazan"
-                loading="lazy"
-                width="30%"
-                height="100%"
-              />
-            </div>
+
+            <img
+              src={ramazan}
+              alt="Ramazan"
+              loading="lazy"
+              width="30%"
+              height="100%"
+            />
           </div>
         </div>
       </section>
