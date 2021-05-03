@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import ReactGA from "react-ga";
 import $ from "jquery";
-import Dashboard from "./Components/Dashboard";
-import { Switch, Route } from "react-router-dom";
-import NotFound from "./Components/NotFound";
+import Header from "./Header";
+import Footer from "./Footer";
+import About from "./About";
+import Resume from "./Resume";
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
+import Testimonials from "./Testimonials";
 
-class App extends Component {
+export default class Dashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,18 +39,17 @@ class App extends Component {
   componentDidMount() {
     this.getResumeData();
   }
-
   render() {
     return (
-      <div className="App">
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-
-          <Route path="*" component={NotFound} />
-        </Switch>
+      <div>
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
+        <Portfolio data={this.state.resumeData.portfolio} />
+        <Testimonials data={this.state.resumeData.main} />
+        <Contact data={this.state.resumeData.main} />
+        <Footer data={this.state.resumeData.main} />
       </div>
     );
   }
 }
-
-export default App;
