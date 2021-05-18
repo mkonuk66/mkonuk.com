@@ -143,14 +143,21 @@
         "image":"mkonukcom.webp",
         "url":"http://www.mkonuk.com/"
       },
+     
+      {
+        "title":"MyBlog",
+        "category":"Henüz geliştirme aşamasında",
+        "image":"comingsoon.webp",
+        "url":"javascript:"
+      },
       {
         "title":"BAL-MAR",
         "category":"Market Otomasyonu",
         "image":"balmar.webp",
-        "url":"javascript:"
+        "url":"https://github.com/mkonuk66/BAL-MAR-Market-Automation"
       },
       {
-        "title":"Blog",
+        "title":"kuskulu.com",
         "category":"Henüz geliştirme aşamasında",
         "image":"comingsoon.webp",
         "url":"javascript:"
@@ -158,9 +165,6 @@
      
       
     ]
-  },
-  "testimonials":{
-    "ramazan": "ramazan.webp",
-    "nisan23" : "nisan23.webp"
   }
+  
 }
