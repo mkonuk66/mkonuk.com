@@ -1,45 +1,91 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-class Footer extends Component {
+export default class Footer extends Component {
   render() {
-    if (this.props.data) {
-      var networks = this.props.data.social.map(function (network) {
-        return (
-          <li key={network.name}>
-            <a href={network.url} target="_blank" rel="dofollow">
-              <i className={network.className}></i>
-            </a>
-          </li>
-        );
-      });
-    }
-
     return (
-      <footer>
-        <div className="row">
-          <div className="twelve columns">
-            <ul className="social-links">{networks}</ul>
+      <div>
+        <footer className="footer">
+          <br />
+          <br />
+          <br />
+          <span className="footerMkonuk">
+            mkonuk
+            <span
+              style={{ fontFamily: "Montserrat" }}
+              className="footerBackColor"
+            >
+              .
+            </span>
+            com
+          </span>
+          <br /> <br />
+          <span className="footerBackColor footerNavigation">
+            <Link to="/" className="footerNav footerBackColor">
+              ANA SAYFA
+            </Link>
+            <Link to="/about" className="footerNav footerBackColor">
+              HAKKIMDA
+            </Link>
 
-            <ul className="copyright">
-              <li>&copy; Copyright 2021</li>
-              <li>
-                Design by{" "}
-                <a title="Styleshout" href="http://www.mkonuk.com/">
-                  {" "}
-                  Mehmet Emin KONUK
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#anasayfa">
-              <i className="icon-up-open"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+            <Link to="/contact" className="footerNav footerBackColor">
+              İLETİŞİM
+            </Link>
+          </span>
+          <br />
+          <br />
+          <a
+            href="https://www.instagram.com/mkonuk66"
+            target="_blank"
+            rel="noreferrer"
+            className="footerIcon footerBackColor "
+            aria-label="instagram"
+          >
+            <i className="fa fa-instagram fa-2x footerBackColor"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/mkonuk66"
+            target="_blank"
+            rel="noreferrer"
+            className="footerIcon footerBackColor "
+            aria-label="twitter"
+          >
+            {" "}
+            <i className="fa fa-twitter fa-2x footerBackColor"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mkonuk66/"
+            target="_blank"
+            rel="noreferrer"
+            className="footerIcon footerBackColor "
+            aria-label="linkedin"
+          >
+            {" "}
+            <i className="fa fa-linkedin fa-2x footerBackColor"></i>
+          </a>
+          <a
+            href="https://www.github.com/mkonuk66/"
+            target="_blank"
+            rel="noreferrer"
+            className="footerIcon footerBackColor"
+            aria-label="github"
+          >
+            {" "}
+            <i className="fa fa-github fa-2x footerBackColor"></i>
+          </a>
+          <br />
+          <br /> <br />
+          <br />
+          <span className="footerBackColor footerCopy">
+            Copyright © 2022 Tüm Hakları Saklıdır |{" "}
+            <Link to="/" className="footerBackColor footerBio">
+              Mehmet Emin KONUK
+            </Link>
+          </span>
+          <br />
+          <br />
+        </footer>
+      </div>
     );
   }
 }
-
-export default Footer;

@@ -1,48 +1,29 @@
 import React, { Component } from "react";
-import ReactGA from "react-ga";
-import $ from "jquery";
+import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Components/Dashboard";
-import { Switch, Route } from "react-router-dom";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
 import NotFound from "./Components/NotFound";
+import Navbar from "./Components/Navigation";
+import NavSpace from "./Components/Nav2";
+import Footer from "./Components/Footer";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      foo: "bar",
-      resumeData: {},
-    };
-
-    ReactGA.initialize("UA-110570651-1");
-    ReactGA.pageview(window.location.pathname);
-  }
-
-  getResumeData() {
-    $.ajax({
-      url: "./resumeData.json",
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-    });
-  }
-
-  componentDidMount() {
-    this.getResumeData();
-  }
-
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-
-          <Route path="*" component={NotFound} />
-        </Switch>
+      <div>
+        {" "}
+        <Navbar />
+        {/*navigation gap, as components start from y=0 due to navigation being fixed, */}
+        <NavSpace />
+        <Routes>
+          <Route exact path="/" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
       </div>
     );
   }
 }
-
-export default App;

@@ -1,0 +1,773 @@
+/*
+=====================================================================
+*   mkonuk.com web design
+*   url: github.com/mkonuk66/mkonuk.com
+*   20-06-2022
+=====================================================================
+   TOC:
+  ***Sections
+   
+===================================================================== */
+/* ==================================================================
+   ================================================================== */
+/* ============================ GENERAL ============================= */
+* {
+  background-color: #f8f9fa;
+  font-family: "Montserrat", sans-serif;
+}
+@font-face {
+  font-family: spotnik;
+  src: url(spotnik.ttf);
+}
+/* ============================ GENERAL ============================= */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== NAVBAR =============================== */
+#navImage {
+  max-height: 5rem;
+}
+.navButton {
+  margin-right: 1.5rem;
+  font-weight: 900;
+  color: #343434;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+.navButton:hover {
+  transition: 0.1s ease-out;
+  border-radius: 5%;
+  border-bottom: #ed0a00 solid 3px;
+  color: #ed0a00;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 960px) {
+  #navImage {
+    max-height: 4rem;
+  }
+  .navButton {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+  #navImage {
+    max-height: 3rem;
+  }
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 575px) {
+  #navImage {
+    max-height: 4.5rem;
+  }
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 574px) and (min-width: 430px) {
+  #navImage {
+    max-height: 4.5rem;
+  }
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 429px) and (min-width: 376px) {
+  #navImage {
+    max-height: 4.5rem;
+  }
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+  #navImage {
+    max-height: 4rem;
+  }
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 319px) {
+  #navImage {
+    max-height: 3rem;
+  }
+  .navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+}
+/* =========================== NAVBAR =============================== */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== HOME ================================= */
+.home {
+  background-color: #000;
+  color: #ed0a00;
+  height: 83vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: top;
+  font-size: 12vh;
+}
+.homeText {
+  font-weight: 900;
+  z-index: 0;
+}
+.homeText:hover {
+  color: black;
+  transition: 1s ease-out;
+}
+.homeTextInfo {
+  text-align: center;
+  font-size: 20%;
+}
+.homeTextInfo:hover {
+  color: black;
+}
+
+.rainbow {
+  background-color: #ed0a00;
+  position: relative;
+  z-index: 0;
+  width: 75vw;
+  height: 75vh;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0rem;
+}
+.rainbow::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953),
+    linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
+    linear-gradient(#377af5, #377af5);
+  animation: rotate 4s linear infinite;
+}
+.rainbow::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(1.5turn);
+  }
+}
+/* =========================== HOME ================================= */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== FOOTER =============================== */
+.footer {
+  background-color: #000;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  height: 100%;
+}
+.footerBackColor {
+  background-color: #000;
+}
+.footerBio {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+.footerBio:hover {
+  color: #ed0a00;
+}
+.footerNavigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerNav {
+  margin: 0 1vw 0 1vw;
+  font-weight: 600;
+  color: white;
+  font-size: 95%;
+  text-decoration: none;
+}
+.footerNav:hover {
+  color: #ed0a00;
+}
+.footerMkonuk {
+  font-family: spotnik;
+  background: #000;
+  font-size: 200%;
+  font-weight: 700;
+}
+.footerIcon {
+  background-color: #000;
+  color: #fff;
+  padding: 0 0.5rem 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+.footerIcon:hover {
+  transition: 0.5s ease-out;
+  color: #ed0a00;
+}
+.footerCopy {
+  font-weight: 200;
+  font-size: 95%;
+}
+@media only screen and (max-width: 749px) and (min-width: 370px) {
+  .footerNavigation {
+    flex-direction: column;
+  }
+  .footerCopy {
+    font-size: 75%;
+  }
+}
+@media (max-width: 370px) {
+  .footerNavigation {
+    flex-direction: column;
+  }
+  .footerCopy {
+    font-size: 55%;
+  }
+}
+/* =========================== FOOTER =============================== */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== SHORT ABOUT ========================== */
+.shortAbout {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15%;
+  padding-top: 8.5%;
+  padding-bottom: 8.5%;
+  justify-content: center;
+  align-items: center;
+}
+.shortAboutTitle {
+  font-weight: 800;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.shortAboutText {
+  margin-left: 8%;
+  margin-right: 15%;
+}
+#pp {
+  width: 20%;
+  border-radius: 10%;
+}
+.shortAboutButton {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+.shortAboutButton:hover {
+  color: #ed0a00;
+}
+.shortAboutResume {
+  text-align: justify;
+  font-size: 1.3rem;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 960px) and (min-width: 341px) {
+  .shortAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .shortAboutTitle {
+    text-align: center;
+    font-size: 50px;
+  }
+  #pp {
+    display: flex;
+    margin: auto;
+    width: 15rem;
+  }
+  .shortAboutText {
+    margin: 5%;
+  }
+}
+@media (max-width: 340px) {
+  .shortAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .shortAboutTitle {
+    text-align: center;
+    font-size: 40px;
+  }
+  #pp {
+    display: flex;
+    margin: auto;
+    width: 15rem;
+    margin-bottom: 5%;
+  }
+  .shortAboutResume {
+    font-size: 15px;
+  }
+}
+/* =========================== SHORT ABOUT ========================== */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== PROJECT ============================== */
+.project {
+  margin-bottom: 5%;
+}
+.projectCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.projectTitle {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 3% 0 1% 0;
+}
+.projectCard {
+  width: 20%;
+  margin: 1rem;
+  color: #000;
+}
+.projectCardText {
+  font-style: italic;
+  font-weight: 300;
+}
+.projectCardFooter {
+  font-weight: 700;
+  color: #399953;
+  text-align: left;
+}
+@media only screen and (max-width: 960px) and (min-width: 430px) {
+  .project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCards {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectCard {
+    width: 100%;
+    margin: 1rem;
+    color: #000;
+  }
+}
+@media only screen and (max-width: 429px) and (min-width: 345px) {
+  .project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCards {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectCard {
+    width: 85%;
+    margin: 1rem;
+    color: #000;
+  }
+}
+@media (max-width: 429px) {
+  .project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCards {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectTitle {
+    font-size: 2rem;
+  }
+  .projectCard {
+    width: 65%;
+    margin: 1rem;
+    color: #000;
+  }
+}
+/* =========================== PROJECT ============================== */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== ABOUT ================================ */
+.about {
+  margin: 1rem 5rem 4rem 5rem;
+}
+#aboutBioImage {
+  height: 16rem;
+  border-radius: 9%;
+}
+.aboutBioBlock {
+  display: flex;
+  flex-direction: row;
+}
+.aboutBioTextBlock {
+  display: flex;
+  margin: 0 4rem 0 4rem;
+  flex-direction: column;
+}
+#aboutBioTitle {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+#aboutBioText {
+  text-align: justify;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+.aboutEducation {
+  margin: 2rem 0 2rem 0;
+}
+.aboutEducationSchoolBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutEducationSchoolTitle {
+  font-weight: 600;
+  font-size: 2rem;
+  width: 29rem;
+}
+.aboutEducationSchoolDesc {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+#aboutEducationTitle {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+#aboutEducationImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: auto;
+  margin-right: 5rem;
+}
+.aboutEducationDesc {
+  display: flex;
+}
+@media only screen and (max-width: 991px) and (min-width: 550px) {
+  .about {
+    margin: 1rem 3rem 4rem 3rem;
+  }
+  .aboutBioBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutBioImage {
+    max-width: 15rem;
+    height: auto;
+    margin: auto;
+  }
+  .aboutBioTextBlock {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+  }
+  #aboutBioTitle {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  .aboutEducationSchoolBlock {
+    border-radius: 2%;
+    flex-direction: column;
+  }
+  .aboutEducationSchoolTitle {
+    text-align: center;
+    width: auto;
+  }
+  .aboutEducationSchoolDesc {
+    text-align: center;
+  }
+  #aboutEducationImage {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .aboutEducationDesc {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 549px) and (min-width: 465px) {
+  .about {
+    margin: 1rem 3rem 4rem 3rem;
+  }
+  .aboutBioBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutBioImage {
+    max-width: 13rem;
+    height: auto;
+    margin: auto;
+  }
+  .aboutBioTextBlock {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+  }
+  #aboutBioTitle {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  .aboutEducationSchoolBlock {
+    border-radius: 2%;
+    flex-direction: column;
+  }
+  .aboutEducationSchoolTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    width: auto;
+  }
+  .aboutEducationSchoolDesc {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #aboutEducationImage {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: auto;
+  }
+  .aboutEducationDesc {
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 464px) {
+  .about {
+    margin: 1rem 1rem 4rem 1rem;
+  }
+  .aboutBioBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutBioImage {
+    max-width: 11rem;
+    height: auto;
+    margin: auto;
+  }
+  .aboutBioTextBlock {
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+  }
+  #aboutBioText {
+    font-size: 0.8rem;
+  }
+  #aboutBioTitle {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  #aboutEducationTitle {
+    font-size: 2rem;
+  }
+  .aboutEducationSchoolBlock {
+    border-radius: 2%;
+    flex-direction: column;
+  }
+  .aboutEducationSchoolTitle {
+    font-size: 1rem;
+    text-align: center;
+    width: auto;
+  }
+  .aboutEducationSchoolDesc {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  #aboutEducationImage {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 6rem;
+    height: auto;
+  }
+  .aboutEducationDesc {
+    font-size: 0.5rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 349px) {
+}
+/* =========================== ABOUT ================================ */
+/* ================================================================== */
+/* ================================================================== */
+/* =========================== CONTACT ============================== */
+.contact {
+}
+.contactForm {
+  border: #000 3px solid;
+  padding: 3% 0 3% 0;
+  border-radius: 1%;
+}
+.contactTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.contactFormTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+.contactInput {
+  border: 0px;
+  border-bottom: #000 1px solid;
+  width: 100%;
+  margin-top: 1%;
+}
+.contactLabel {
+  font-weight: 700;
+}
+.contactFormGroup {
+  margin: 2% 5% 0 5%;
+}
+.contactFormGroupName {
+  width: 40%;
+  margin: 2% 5% 0 5%;
+}
+.contactNameGroup {
+  display: flex;
+  flex-direction: row;
+}
+.contactInfo {
+  text-align: center;
+  font-style: italic;
+}
+.contactIconInstagram {
+  margin: 0 1% 0 1%;
+  color: #fff;
+  border-radius: 35%;
+  padding: 0 0.3% 0 0.3%;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+.contactIconInstagram:hover {
+  background: #f8f9fa;
+  transition: 1s ease-out;
+  color: #ed0a00;
+}
+.contactIconTwitter {
+  margin: 0 1% 0 1%;
+  color: #00acee;
+}
+.contactIconTwitter:hover {
+  transition: 0.5s ease-out;
+  color: #ed0a00;
+}
+.contactIconLinkedin {
+  margin: 0 1% 0 1%;
+  color: #0e76a8;
+}
+.contactIconLinkedin:hover {
+  transition: 0.5s ease-out;
+  color: #ed0a00;
+}
+@media (max-width: 960px) {
+  .contactNameGroup {
+    flex-direction: column;
+  }
+  .contactFormGroupName {
+    width: 90%;
+    margin: 2% 5% 0 5%;
+  }
+}
+/* =========================== CONTACT ============================== */
+@media only screen and (max-width: 960px) and (min-width: 750px) {
+}
+@media only screen and (max-width: 749px) and (min-width: 550px) {
+}
+@media only screen and (max-width: 549px) and (min-width: 350px) {
+}
+@media (max-width: 349px) {
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #ed0a00;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}

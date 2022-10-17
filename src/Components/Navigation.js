@@ -1,51 +1,38 @@
-import React, { Component } from "react";
+import React from "react";
+import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav } from "reactstrap";
+import { Link, NavLink } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 
-export default class Navigation extends Component {
-  render() {
-    return (
-      <div>
-        <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-            Navigasyonu Göster
-          </a>
-          <a className="mobile-btn" href="#home" title="Hide navigation">
-            Navigasyonu Gizle
-          </a>
+const Navigation = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
-          <ul id="nav" className="nav">
-            <li className="current">
-              <a className="smoothscroll" href="#anasayfa">
-                Ana Sayfa
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#benkimim">
-                Ben Kimim ?
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#hakkimda">
-                Hakkımda
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#proje">
-                Projeler
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#paylasim">
-                Paylaşımlar
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#iletisim">
-                İletişim
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <Navbar color="light" expand="lg" fixed="top" full light>
+        <NavbarBrand>
+          <Link to="/">
+            <img src="/images/logo.webp" alt="logo.png" id="navImage" />
+          </Link>
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          {" "}
+          <Nav className="ms-auto" navbar>
+            <NavLink to="/" className="navButton">
+              Ana Sayfa
+            </NavLink>
+            <NavLink to="/about" className="navButton">
+              Hakkımda
+            </NavLink>
+            <NavLink to="/contact" className="navButton">
+              İletişim
+            </NavLink>
+          </Nav>
+        </Collapse>{" "}
+      </Navbar>
+    </div>
+  );
+};
+export default Navigation;
